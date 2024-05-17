@@ -1,4 +1,4 @@
-.DEFAULD_TARGET := air
+.DEFAULT_GOAL := air
 air-install:
   	go install github.com/cosmtrek/air@latest
 air-init:
