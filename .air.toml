@@ -8,7 +8,7 @@ bin = "./bin/main"
 #build golang app. you set up your directory which is located main.go
 cmd = "CGO_ENABLED=0 GOOS=linux go build  -a -installsuffix cgo -o ./bin ./command/main.go"
 delay = 1000
-exclude_dir = ["assets", "tmp", "vendor", "testdata"]
+exclude_dir = ["assets", "tmp", "vendor", "testdata","docs"]
 exclude_file = []
 exclude_regex = ["_test.go"]
 exclude_unchanged = false
@@ -17,7 +17,7 @@ full_bin = ""
 include_dir = []
 include_ext = ["go", "tpl", "tmpl", "html"]
 include_file = [".env"]
-kill_delay = "0s"
+kill_delay = "5s"
 log = "build-errors.log"
 poll = false
 poll_interval = 0
